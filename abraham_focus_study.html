@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abraham - Focus and Attraction</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:sans-serif;background:#f9f9f7;color:#222;padding:20px}
+h1{font-size:18px;font-weight:600;text-align:center;color:#333;margin-bottom:4px}
+.subtitle{font-size:13px;color:#999;text-align:center;margin-bottom:16px}
+.panel{display:none;margin:0 12px 16px;background:#fff;border:1px solid #ddd;border-radius:12px;padding:20px 20px 16px}
+.panel.open{display:block}
+.panel-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:12px}
+.panel-title{font-size:15px;font-weight:600;color:#111;line-height:1.3}
+.close-btn{flex-shrink:0;width:26px;height:26px;border-radius:50%;border:1px solid #ccc;background:#f5f5f5;cursor:pointer;font-size:13px;color:#555;line-height:26px;text-align:center}
+.close-btn:hover{background:#e5e5e5}
+.panel-body{font-size:13px;color:#555;line-height:1.75}
+.panel-body p{margin-bottom:8px}
+.panel-body p:last-child{margin-bottom:0}
+.pill{display:inline-block;font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;margin-bottom:8px}
+.hint{text-align:center;font-size:12px;color:#999;padding:4px 0 10px}
+.node-g{cursor:pointer}
+.node-g:hover rect{opacity:.85}
+.wrap{max-width:700px;margin:0 auto}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Abraham -- Focus and Attraction</h1>
+<p class="subtitle">Tap any node to explore the teaching</p>
+
+<div id="panel-focus" class="panel">
+<div class="panel-header">
+<div><span class="pill" style="background:#EEEDFE;color:#3C3489">The choice point</span><div class="panel-title">Your focus</div></div>
+<button class="close-btn" onclick="closePanel('focus')">x</button>
+</div>
+<div class="panel-body">
+<p>In Abraham's teaching, focus is not just attention -- it is creative force. Whatever you give your attention to, you include in your vibration. And whatever you include in your vibration, you are in the process of attracting.</p>
+<p>The nuance most people miss: it is not just what you focus on, but the emotional quality you bring to it. You can think about money while feeling abundant, or think about money while feeling scarcity. Same subject, completely different vibration. The feeling always wins.</p>
+<p>Abraham treats focus as a practiced skill -- becoming deliberately selective about where you place your attention, not as denial of reality, but as a conscious choice about which aspects of reality you amplify.</p>
+</div>
+</div>
+
+<div id="panel-solution" class="panel">
+<div class="panel-header">
+<div><span class="pill" style="background:#E1F5EE;color:#085041">Left path</span><div class="panel-title">On a solution</div></div>
+<button class="close-btn" onclick="closePanel('solution')">x</button>
+</div>
+<div class="panel-body">
+<p>Focusing on a solution means pointing your attention toward what you want to create -- what could work, what is possible, what the next step forward might be. It is proactive and forward-looking by nature.</p>
+<p>Psychologically, solution focus implies agency: "something can be done." That sense of capability is one of the most reliable antidotes to anxiety. Your nervous system relaxes, your threat-detection system stands down, and you shift from defensive mode into a more open, creative state.</p>
+<p>From Abraham's view: solutions are pointed toward what you want, so your inner being flows fully through that thought with you. The good feeling you get is confirmation you are aimed in the right direction.</p>
+</div>
+</div>
+
+<div id="panel-positive" class="panel">
+<div class="panel-header">
+<div><span class="pill" style="background:#EAF3DE;color:#27500A">The signal</span><div class="panel-title">Positive emotion</div></div>
+<button class="close-btn" onclick="closePanel('positive')">x</button>
+</div>
+<div class="panel-body">
+<p>Positive emotion is your real-time feedback that you are in vibrational alignment with what you want. Abraham calls it your emotional guidance system -- it tells you instantly which direction you are pointed.</p>
+<p>Psychologist Barbara Fredrickson's "broaden-and-build" theory confirms this physically: positive emotions literally widen the scope of what your mind can perceive and generate. They build social bonds, creative skills, and resilience -- resources that compound over time.</p>
+<p>The key insight: the positive feeling is not a reward for thinking correctly. It is the mechanism itself working. It opens you to perception, to people, to possibility, to action.</p>
+</div>
+</div>
+
+<div id="panel-want" class="panel">
+<div class="panel-header">
+<div><span class="pill" style="background:#E1F5EE;color:#085041">The outcome</span><div class="panel-title">Attracting what you want</div></div>
+<button class="close-btn" onclick="closePanel('want')">x</button>
+</div>
+<div class="panel-body">
+<p>To attract what you want means that when you are in alignment with your desire -- when you have released resistance to it -- the people, circumstances, ideas, and opportunities that match that desire begin flowing into your experience.</p>
+<p>In practice it looks like: inspired ideas that seem to come from nowhere, synchronicities, shifted perception (noticing things that were always there but invisible), changed behavior, and doors opening as people respond to your energy differently.</p>
+<p>Abraham's key point: you do not need to figure out the how. The positive emotion is confirmation you have done your part. You have lined up. The rest follows.</p>
+</div>
+</div>
+
+<div id="panel-problem" class="panel">
+<div class="panel-header">
+<div><span class="pill" style="background:#FAECE7;color:#712B13">Right path</span><div class="panel-title">On a problem</div></div>
+<button class="close-btn" onclick="closePanel('problem')">x</button>
+</div>
+<div class="panel-body">
+<p>Focusing on a problem means keeping your attention on what is wrong, missing, or broken. Problems imply lack by definition -- and holding that thought keeps your attention on the gap between where you are and where you want to be.</p>
+<p>The brain treats focused attention as reality. When you dwell on a problem, your brain activates the same stress responses as if the threat is happening right now. Rumination amplifies the signal -- the mind finds related problems, past failures, and worst-case scenarios in a self-reinforcing loop.</p>
+<p>From Abraham's view: focusing on a problem means you are vibrating at the frequency of what is unwanted. The negative emotion you feel is simply your inner being signaling "you are pointed away from what you want."</p>
+</div>
+</div>
+
+<div id="panel-negative" class="panel">
+<div class="panel-header">
+<div><span class="pill" style="background:#FCEBEB;color:#791F1F">The signal</span><div class="panel-title">Negative emotion</div></div>
+<button class="close-btn" onclick="closePanel('negative')">x</button>
+</div>
+<div class="panel-body">
+<p>Negative emotion is your guidance system telling you that your current focus is aimed away from what you want. Abraham emphasizes: it is not punishment -- it is information. It is the feeling of resistance, of paddling upstream.</p>
+<p>The emotion itself is not the attractor -- it is the indicator of what you are attracting. Think of it like a radio signal telling you which station you are broadcasting on.</p>
+<p>When you notice negative emotion, do not fight it or suppress it. Acknowledge where you are, then gently reach for a thought that feels even slightly better. You do not need to leap to joy -- just one step upstream is enough.</p>
+</div>
+</div>
+
+<div id="panel-notwant" class="panel">
+<div class="panel-header">
+<div><span class="pill" style="background:#FAECE7;color:#712B13">The outcome</span><div class="panel-title">Attracting what you don't want</div></div>
+<button class="close-btn" onclick="closePanel('notwant')">x</button>
+</div>
+<div class="panel-body">
+<p>When your emotional signal is consistently negative, you are -- in Abraham's terms -- on the frequency of what you do not want, and like attracts like.</p>
+<p>Psychology agrees through different mechanisms: confirmation bias filters your perception to find evidence matching your fear. Behavioral loops recreate the conditions generating negative emotion. Interpersonal resonance means others respond to your state. Self-fulfilling prophecy turns expectations into reality.</p>
+<p>The good news: this is always reversible. The moment you shift your focus -- even slightly, even on an unrelated subject -- you begin changing your point of attraction. The shift starts inside, and the outer world follows.</p>
+</div>
+</div>
+
+<svg width="100%" viewBox="0 0 680 530" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="#888780" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+
+<g class="node-g" onclick="openPanel('focus')">
+<rect x="255" y="28" width="170" height="52" rx="10" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="340" y="54" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" font-family="sans-serif" fill="#26215C">Your focus</text>
+</g>
+
+<line x1="280" y1="80" x2="180" y2="158" stroke="#888780" stroke-width="1" marker-end="url(#arr)"/>
+<line x1="400" y1="80" x2="500" y2="158" stroke="#888780" stroke-width="1" marker-end="url(#arr)"/>
+
+<g class="node-g" onclick="openPanel('solution')">
+<rect x="88" y="160" width="184" height="56" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<text x="180" y="181" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" font-family="sans-serif" fill="#04342C">On a solution</text>
+<text x="180" y="200" text-anchor="middle" dominant-baseline="central" font-size="12" font-family="sans-serif" fill="#0F6E56">Proactive, forward-looking</text>
+</g>
+
+<line x1="180" y1="216" x2="180" y2="286" stroke="#888780" stroke-width="1" marker-end="url(#arr)"/>
+
+<g class="node-g" onclick="openPanel('positive')">
+<rect x="88" y="288" width="184" height="56" rx="10" fill="#EAF3DE" stroke="#3B6D11" stroke-width="1"/>
+<text x="180" y="309" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" font-family="sans-serif" fill="#173404">Positive emotion</text>
+<text x="180" y="328" text-anchor="middle" dominant-baseline="central" font-size="12" font-family="sans-serif" fill="#3B6D11">Relief, joy, excitement</text>
+</g>
+
+<line x1="180" y1="344" x2="180" y2="416" stroke="#888780" stroke-width="1" marker-end="url(#arr)"/>
+
+<g class="node-g" onclick="openPanel('want')">
+<rect x="68" y="418" width="224" height="64" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<text x="180" y="443" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" font-family="sans-serif" fill="#04342C">Attracting what</text>
+<text x="180" y="463" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" font-family="sans-serif" fill="#04342C">you want</text>
+</g>
+
+<g class="node-g" onclick="openPanel('problem')">
+<rect x="408" y="160" width="184" height="56" rx="10" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="500" y="181" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" font-family="sans-serif" fill="#4A1B0C">On a problem</text>
+<text x="500" y="200" text-anchor="middle" dominant-baseline="central" font-size="12" font-family="sans-serif" fill="#993C1D">Resistant, stuck in lack</text>
+</g>
+
+<line x1="500" y1="216" x2="500" y2="286" stroke="#888780" stroke-width="1" marker-end="url(#arr)"/>
+
+<g class="node-g" onclick="openPanel('negative')">
+<rect x="408" y="288" width="184" height="56" rx="10" fill="#FCEBEB" stroke="#A32D2D" stroke-width="1"/>
+<text x="500" y="309" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" font-family="sans-serif" fill="#501313">Negative emotion</text>
+<text x="500" y="328" text-anchor="middle" dominant-baseline="central" font-size="12" font-family="sans-serif" fill="#A32D2D">Worry, frustration, fear</text>
+</g>
+
+<line x1="500" y1="344" x2="500" y2="416" stroke="#888780" stroke-width="1" marker-end="url(#arr)"/>
+
+<g class="node-g" onclick="openPanel('notwant')">
+<rect x="388" y="418" width="224" height="64" rx="10" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="500" y="443" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" font-family="sans-serif" fill="#4A1B0C">Attracting what you</text>
+<text x="500" y="463" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" font-family="sans-serif" fill="#4A1B0C">don't want</text>
+</g>
+
+<text x="340" y="318" text-anchor="middle" font-size="12" font-family="sans-serif" fill="#999999">-- emotion is the signal --</text>
+</svg>
+
+</div>
+
+<script>
+function openPanel(id) {
+  document.querySelectorAll('.panel').forEach(function(p){ p.classList.remove('open'); });
+  var el = document.getElementById('panel-' + id);
+  if (el) { el.classList.add('open'); el.scrollIntoView({behavior:'smooth', block:'nearest'}); }
+}
+function closePanel(id) {
+  var el = document.getElementById('panel-' + id);
+  if (el) el.classList.remove('open');
+}
+</script>
+</body>
+</html>
